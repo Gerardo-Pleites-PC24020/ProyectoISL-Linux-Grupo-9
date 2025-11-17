@@ -1,15 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Index</title>
-	</head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto ISL135 - Grupo 9</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #764ba2;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            font-weight: normal;
+        }
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-box h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            line-height: 1.6;
+        }
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .member {
+            background: #667eea;
+            color: #FFF;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #666;
+        }
+        .badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Proyecto Final ISL135</h1>
+        <h2>Servidor Linux con Docker - Grupo 9</h2>
+        
+        <div class="info-box">
+            <h3>Información del Proyecto</h3>
+            <p><strong>Curso:</strong> Introducción al Software Libre</p>
+            <p><strong>Ciclo:</strong> II-2025</p>
+            <p><strong>Universidad:</strong> Universidad de El Salvador - FMOcc</p>
+            <p><strong>Carrera:</strong> Ingeniería en Desarrollo de Software</p>
+        </div>
 
-	<body>
-		<header>
-			<h1>Proyecto Final ISL</h1>
-			<h2>Servidor Linux con Docker - Grupo 9</h2>
-		</header>
-	</body>
+        <div class="info-box">
+            <h3>Integrantes del Grupo</h3>
+            <div class="team">
+                <div class="member">
+                    <p>Rodrigo Alexis Mercado Calidonio</p>
+                </div>
+                <div class="member">
+                    <p>Manuel Abilio Posada Reina</p>
+                </div>
+                <div class="member">
+                    <p>José Gerardo Pleites Campos</p>
+                </div>
+                <div class="member">
+                    <p>Juan Pablo José Martínez Santamaría</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>Tecnologías Implementadas</h3>
+            <p>- Linux Mint (Sistema Base)</p>
+            <p>- Docker & Nginx (Contenedores)</p>
+            <p>- Bash Scripting (Automatización)</p>
+            <p>- Cron (Tareas Programadas)</p>
+            <p>- Git & GitHub (Control de Versiones)</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Servidor:</strong> servidor-grupo9</p>
+            <span class="badge">🟢 Sistema Operativo</span>
+            <p style="margin-top: 10px;">© 2025 - Proyecto Final ISL135</p>
+        </div>
+    </div>
+</body>
 </html>
